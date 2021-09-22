@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+        <head>
+            
+            <meta charset="utf-8">
+            <title>Mi Login</title>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+            <script>
+                function validacionContrasena(){
+                    var x = document.getElementById("newpass").value;
+                    var x2 = document.getElementById("compass").value;
+                    
+                    if(x == x2){
+                        console.log="contrasena cumple";
+                    }else{
+                        window.alert("Contraseñas no coinciden");
+                        console.log="contrasena NO cumple";
+                    }
+                }
+
+
+
+            </script>
+
+        </head>
+
+    <body>
+
+        <div class="container">
+            <div class="card col-md-4 mt-4">
+                <div class="card-title">
+                    <img class="rounded mx-auto d-block" src="r1.jpg" alt="imagen de login" width="370" height="165">
+                </div>
+
+                <div class="form-control">
+
+                    <form action="./login.htm">
+
+
+                    <input type="email" name="" id="" class="form-control" placeholder="Username" required="true">
+
+                    <input type="answerQuestion" name="" id="ansq" class="form-control" placeholder="Respuesta pregunta secreta" required="true">
+
+                    <input type="newPassword" name="" id="newpass" class="form-control" placeholder="Nueva Password" required="true">
+
+                    <input type="confirmPassword" name="" id="compass" class="form-control" placeholder="Confirmar Password" required="true">
+
+                   
+                    <div class="d-grid gap-2 m-2">
+                    <input class="btn btn-success btn-lg" type="button" onclick="validacionContrasena()" value="Change password">
+
+                    </div>
+
+                     <div class="d-grid gap-2 m-2">
+                    <input class="btn btn-warning btn-xs"  type="submit"  value="Volver al Loging">
+                    </div> 
+
+                    </form>
+
+                    <!--   <div class="d-grid gap-2 m-2">
+                    <input class="btn btn-warning btn-xs" type="submit" value="Forgot Password? - Click here!">
+                    </div>   -->  
+                
+                
+                </div>  
+
+    </body>
+
+</html>

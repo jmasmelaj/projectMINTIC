@@ -1,0 +1,14 @@
+body {
+    background-color: transparent;
+    color: rgba(3, 6, 146, 0);
+
+}
+
+div.principal {
+    border-style: solid ;
+    border-color: green;
+}
+
+div.barra{
+    
+}
